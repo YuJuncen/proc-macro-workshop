@@ -16,4 +16,10 @@ path = "tests/progress.rs"
 trybuild = { version = "1.0", features = ["diff"] }
 
 [dependencies]
-# TODO
+syn = { version = "1.0", features = ["derive"] }
+quote = "1.0"
+proc-macro2 = "1.0"
+
+[[bin]]
+name = "playground"
+path = "bin/playground.rs"
